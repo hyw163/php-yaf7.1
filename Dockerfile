@@ -28,8 +28,8 @@ apt-get install -y --no-install-recommends \
     pecl install yaf-3.0.8 && \
     docker-php-ext-enable bcmath zip pdo_mysql pgsql pdo_pgsql mcrypt sockets yaf
 
-# install memcached xdebug redis
-RUN pecl install memcached xdebug redis
+# install memcached redis
+RUN pecl install memcached redis
 
 # install xdebug
 RUN pecl install xdebug-2.7.2 
